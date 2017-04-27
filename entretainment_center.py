@@ -51,6 +51,7 @@ MOVIES=[{
                    "Basic_movie.jpg"),
          "trailer":"https://www.youtube.com/watch?v=kE7Ue5hjJc0"
          }]
+
 #Load the meta-data on the movie list
 movie_list=[]
 for movie in MOVIES:
@@ -58,5 +59,6 @@ for movie in MOVIES:
                              movie["boxart"],
                              movie["poster"],
                              movie["trailer"])]
+
 #Open the page to display the movies poster and trailer
 fresh_tomatoes.open_movies_page(movie_list)
